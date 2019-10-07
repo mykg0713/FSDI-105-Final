@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="./lib/jquery-3.4.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Mansalva|Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Register</title>
+</head>
+<body>
+    <header class="site-in">
+        <h1>Fashion Pets</h1>
+        <div class="menu">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="#">About</a>
+                <a href="register.html">Register</a>
+            </nav>
+        </div>
+    </header>
+   
+
+    <main class="main-in">
+        <div class="img-location">
+            
+            <img class="img-logo-register" src="img/pets_big.webp">
+        </div>
+        <div class="info">
+    
+            </div>
+        
+        <div class="register-form">
+            <form action="#">
+                <p>Name:  <input type="text" id="name" placeholder="Pet's Name"></p>
+                <p>Age:  <input type="text" name="age" id="age" placeholder="Pet's Age"></p>
+                <p>Type:  <select name="type" id="type"></p>
+                    <option value="" disabled selected> -- Animal Type --</option>
+                    <option value="Dog">Dog</option>
+                    <option value="Cat">Cat</option>
+                    <option value="Bird">Bird</option>
+                    <option value="Other">Other</option>
+                </select></p>
+
+                <p>Gender: <select name="gender" id="gender">
+                    <option value="" disabled select> -- Select Gender --</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select></p>
+
+                <p>Breed:  <input type="text" id="breed" placeholder="Pet's Breed"></p>
+                <p>Service: <select name="service" id="service">
+                        <option value="" disabled selected> -- Select a service --</option>
+                        <option value="Shower">Shower</option>
+                        <option value="Hair Cut">Hair Cut</option>
+                        <option value="Nail Clipping">Nail Clipping</option>
+                        <option value="Full Service">Full Service</option>
+                </select></p>
+                <p>Owner's name:  <input type="text" id="ownerName"></p>
+                <p>Contact Number:  <input type="text" id="contactPhone"></p>
+                  
+            </form>
+             
+
+            
+            <button type="button" class="btn btn-success" onclick="register()";>Register</button>
+        
+        </div>
+
+
+      <!--   <div>
+            <input type="text" id="inputSearch">
+            <button type="button" class="btn btn-success" onclick="search()";> Search </button>
+
+        </div> -->
+    </main>
+<br>
+    <section class="list-pets">
+        <h2>Registered Pets</h2>
+
+        <div>
+            <table class="table" id="petTable">
+                <thead>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Type</th>
+                    <th>Gender</th>
+                    <th>Breed</th>
+                    <th>Service</th>
+                    <th>Owner's Name</th>
+                    <th>Contact Phone</th>
+                    <th>Options</th>
+                    
+                </thead>
+                <tbody id="listBody">
+                   
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+
+  
+
+
+<!-- Footer -->
+    <footer class="footer-in">
+        <div class="menu-footer">
+                <nav>
+                        <a href="index.html">Home</a>
+                        <a href="#">About</a>
+                        <a href="register.html">Register</a>
+                    </nav>
+            </div>
+        <div class="info">
+
+        </div>
+    </footer>
+
+<!-- Search form -->       
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search pets..">
+
+<!-- Scripts -->
+
+    <script src="jquery-3.4.1.js"></script>
+    <script src="script.js" ></script> 
+    
+    
+</body>
+</html>
